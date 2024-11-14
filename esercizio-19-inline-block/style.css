@@ -1,0 +1,26 @@
+.a {
+    display: inline;
+    background-color: antiquewhite;
+    color: blue;
+    border: 4px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+.b {
+    display: inline-block;
+    background-color: antiquewhite;
+    color: blue;
+    border: 4px solid red;
+    width: 100px;
+    height: 100px;
+}
+
+.c {
+    display: block;
+    background-color: antiquewhite;
+    color: blue;
+    border: 4px solid red;
+    width: 100px;
+    height: 100px;
+}
