@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    background-color: aqua;
+    height: 30%;
+    text-align: center;
+    margin: 15px;
+}
+
+p {
+    background-color: bisque;
+    height: 30%;
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: blueviolet;
+    font-size: 25px;
+    width: 100%;
+    height: 8%;
+}
