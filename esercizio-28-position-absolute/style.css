@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 150vh;
+}
+
+.contenitore {
+    background-color: bisque;
+    font-size: 25px;
+    height: 30%;
+}
+
+.paragrafo {
+    background-color: aquamarine;
+    font-size: 25px;
+    height: 20%;
+    margin: 10px 0;
+}
+
+.quadrato {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background-color: blueviolet;
+}
