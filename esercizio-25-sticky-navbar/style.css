@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
+    color: blue;
+    height: 50px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+
+}
+
+a:hover {
+    color: brown;
+    text-decoration-line: underline;
+}
