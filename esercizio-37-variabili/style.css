@@ -1,0 +1,7 @@
+:root {
+    --colore-rosso: #FF0000;
+}
+
+* {
+    color: var(--colore-rosso);
+}
