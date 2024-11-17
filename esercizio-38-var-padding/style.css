@@ -1,0 +1,10 @@
+:root {
+    --padding-size: 20px;
+}
+
+
+span {
+    padding: var(--padding-size);
+    font-size: 3rem;
+    color: blueviolet;
+}
