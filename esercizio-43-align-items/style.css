@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aquamarine;
+    gap: 20px;
+    height: 200px;
+}
+
+.items {
+    width: 20%;
+    height: 20%;
+    background-color: brown;
+    text-align: center;
+}
