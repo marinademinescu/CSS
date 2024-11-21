@@ -1,0 +1,11 @@
+.Contenitore {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    background-color: aqua;
+    gap: 30px;
+}
+
+div {
+    flex: 1 1 50px;
+}
