@@ -1,0 +1,22 @@
+.contenitore {
+    display: flex;
+    background-color: lightblue;
+    height: 20vh;
+    gap: 40px;
+}
+
+.items {
+    flex-shrink: 2;
+    color: red;
+    background-color: aqua;
+    height: 40%;
+    width: 40%;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.items:nth-child(1) {
+    flex-shrink: 4;
+    background-color: bisque;
+}
