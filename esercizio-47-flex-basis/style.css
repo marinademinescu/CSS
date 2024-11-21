@@ -1,0 +1,20 @@
+.contenitore {
+    display: flex;
+    background-color: aqua;
+    height: 20vh;
+    align-items: center;
+    gap: 20px;
+}
+
+.items {
+    flex-basis: 100px;
+    height: 40px;
+    margin: 20px;
+   background-color: pink;
+   text-align: center;
+}
+
+.items:nth-child(2) {
+    flex-basis: 200px;
+    background-color: yellowgreen;
+}
