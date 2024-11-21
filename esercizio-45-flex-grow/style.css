@@ -1,0 +1,22 @@
+.contenitore {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: yellowgreen;
+    height: 50px;
+    gap: 20px;
+    font-size: 30px;
+  
+}
+
+.items {
+    flex-grow: 2;
+    color: black;
+    background-color: blueviolet;
+    margin: 20px;
+    text-align: center;
+}
+
+.items:nth-child(3) {
+    flex-grow: 6;
+}
