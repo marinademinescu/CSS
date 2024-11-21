@@ -1,0 +1,22 @@
+.contenitore {
+    display: flex;
+    background-color: greenyellow;
+    height: 20vh;
+    gap: 20px;
+}
+
+.items {
+    width: 20%;
+    height: 20%;
+    background-color: beige;
+    text-align: center;
+    font-size: 20px;
+}
+
+.items:nth-child(1) {
+   align-self: flex-end;
+}
+
+.items:nth-child(3) {
+    align-self: center;
+}
