@@ -1,0 +1,19 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: aquamarine;
+    gap: 20px;
+
+}
+
+.grid-container div {
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    
+}
+
+.uno-quattro {
+    grid-row: span 2;
+    background-color: antiquewhite;
+} 
