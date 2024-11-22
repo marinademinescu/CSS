@@ -1,0 +1,13 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: aquamarine;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+div {
+    border: 2px solid black;
+    padding: 20px;
+}
