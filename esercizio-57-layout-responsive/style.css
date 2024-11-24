@@ -1,0 +1,241 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 5fr;/ gap: 25px;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
+
+.equals {
+  grid-column: span 2;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.equals:hover {
+
+  background-color: #45a049;
+  color: red;
+}
+
+.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #e53935;
+}
+
+@media and (max-width: 768px) {
+  .calculator {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+  }
+}
+
+
+input {
+  font-size: 1.2em;
+  padding: 8px;
+}
+
+button {
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+.buttons {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.equals {
+  grid-column: span 2;
+
+}
+
+.clear {
+  grid-column: span 2;
+
+}
+
+
+Per adattare il tuo progetto a una navigazione mobile e renderlo responsive,
+dobbiamo assicurarci che il layout si adatti a schermi di dimensioni più piccole (tipicamente dispositivi mobili o tablet). Utilizzerò il progetto della calcolatrice su cui stai lavorando come esempio. Passaggi principali per creare un layout responsivo: Media Query: Definiremo le regole per schermi di dimensioni più piccole,
+ad esempio sotto 768px. Layout flessibile: Utilizzeremo proprietà come flexbox e grid per adattare i contenuti in modo fluido. Ridimensionamento dei pulsanti: I pulsanti della calcolatrice devono essere ridimensionati per una visualizzazione migliore su schermi più piccoli. Modifiche ai margini,
+padding e font-size: Aggiungeremo un po' di spazio extra sui dispositivi mobili e ridurremo la dimensione del testo per evitare sovrapposizioni.
+ Ecco come adattare il tuo progetto con un layout responsivo per la navigazione mobile: CSS completo con Media Queries per la navigazione mobile: css Copia codice
+
+/* Stili generali per schermi grandi */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Calcolatrice principale */
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  /* 1 row for the display and 4 rows for buttons */
+  gap: 10px;
+  width: 260px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-size: 1.5em;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+}
+
+/* Layout dei pulsanti */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 colonne per i pulsanti */
+  grid-gap: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 1.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+}
+
+button:active {
+  background-color: #d0d0d0;
+}
+
+.equals {
+  background-color: #4CAF50;
+  color: white;
+  grid-column: span 2;
+  /* Estende il pulsante "=" su 2 colonne */
+}
+
+.equals:hover {
+  background-color: #45a049;
+}
+
+.clear {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear:hover {
+  background-color: #e53935;
+}
+
+
+@media screen and (max-width: 480px) {
+
+  button {
+    padding: 12px;
+    font-size: 1em;
+  }
+
+  .calculator {
+    max-width: 270px;
+    padding: 5px;
+  }
+
+  input {
+    font-size: 1.1em;
+    padding: 6px;
+  }
+
+
+  .buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .equals {
+    grid-column: span 2;
+  }
+
+  .clear {
+    grid-column: span 2;
+  }
+}
